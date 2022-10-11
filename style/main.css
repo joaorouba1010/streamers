@@ -1,0 +1,82 @@
+body{
+    background-color: #222;
+    color: white;
+    margin: 5%;
+}
+
+/*
+ Main Menu
+*/
+#Menu{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-items: center;
+}
+
+#Menu button{
+    padding: 15px;
+    margin: 15px;
+    border: none;
+    float: left;
+    border-radius: 15px;
+
+}
+
+#Chatings{
+    position: absolute;
+    right: 0;
+}
+/*
+POP UP ADD STREAMER
+*/
+
+#addnew{
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 25%;
+    width: 300px;
+
+    background-color: rgba(5, 5, 5, 0.63);
+    border: solid black 1px;
+    user-select: none;
+}
+
+#addnew .close{
+    position: absolute;
+    right: 5px;
+    color: red;
+    margin: 1%;
+    cursor: pointer;
+}
+
+#addnew .context{
+    margin: 10%;
+    color: white
+}
+
+#addnew .context input{
+    margin: 5%;
+    margin-left: 0;
+    width: 95%;
+}
+
+#addnew .context button{
+   float: left;
+}
+
+#addnew .context .stream_list .item-inlist{
+    position: relative;
+    width: 100%;
+    height: 21px;
+    border: solid white 1px;
+    margin: 2px;
+    padding: 3px;
+
+}
+
+#addnew .context .stream_list .item-inlist .close{
+    top: 0;
+}
