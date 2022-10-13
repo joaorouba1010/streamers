@@ -1,14 +1,18 @@
 <?php
-$function_name = $_POST['function'];
-$function_arg1 = $_POST['arg1'];
-$function_arg2 = $_POST['arg2'];
-$function_arg3 = $_POST['arg3'];
-//echo $function_name . "<BR>" . $function_arg1 . "<BR>" . $function_arg2 . "<BR>". $function_arg3;
-if(!isset($function_name))
+
+if(!isset($_POST['function']))
     die("No function name setter");
 
-$stms = "str.html";
+$function_name = $_POST['function'];
+$function_arg1 = '';
 
+if(isset($_POST['arg1']))
+    $function_arg1 = $_POST['arg1'];
+
+//$function_arg2 = $_POST['arg2'];
+//$function_arg3 = $_POST['arg3'];
+$stms = "str.html";
+$rets = '';
 switch($function_name){
 
     case "load_html":
